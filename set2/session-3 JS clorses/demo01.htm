@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>
+            Js coluser
+        </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script language="JavaScript">
+            // <!--
+                function init() {
+                    console.log(navigator);
+                    console.log(navigator.appName);
+                    console.log(navigator.appVersion);
+                    console.log(navigator.userAgent);
+                    // console.log(navigator.javaEnabled());
+                }
+                init()
+                var newWind ;
+                function openNewWindow() {
+                    newWind = window.open("http://www.lumen.com","","top=200,left=500,height=250,width=450")
+                }
+                function closeNewWindow() {
+                    newWind.close();
+                }
+                function emit420(){
+                    var num =419;
+                    var res = function (){ console.log(num);}
+                    num++;
+                    return res;
+                }
+                var result = emit420()
+                result();
+                // result();
+                var setval , incre , showval;
+                function numberGol(){
+                    var num = 108;
+                    setval = function(te){num = te;}
+                    incre = function(){num++;}
+                    showval = function(){console.log(num+" --");}
+                }
+                numberGol();
+                // showval();
+                // incre();
+                // incre();
+                // incre();
+                // showval();
+                // setval(5);
+                showval();
+                function selfCloseNewWindow() {
+                    self.close();
+                }
+                var tmrRef;
+                function delayTimeOutNewWindow() {
+                    // setTimeout(openNewWindow,2000);//without refences can't clear
+                    // tmrRef = window.setTimeout(openNewWindow,2000);
+                    // window.clearTimeout(tmrRef);//this will clearSetTimer
+                    tmrRef = window.setInterval(function(){
+                        var dt = new Date();
+                        console.log(dt.toLocaleTimeString());
+                    },2000)
+                    function fun(){
+                        window.clearInterval(tmrRef);
+                    }
+                    setTimeout(fun,10000);
+                }
+                function openNewWindowDocCode(){
+                    var id = window.open("","","top=100,left=350,height=auto,width=700")
+                    id.document.open()
+                    console.log(id.navigator.appName);
+                    id.document.write("<html><head>        <title>            Js coluser        </title>")
+                    id.document.write("<body> <h1>My frist html document</h1>        <p>This is a page which illustrates the usage of links!</p></body></html>")
+                }
+                function changeLinkurl(ind,url) {
+                    document.links[ind].href = url ;
+                }
+                // -->
+        </script>
+    </head>
+    <body>
+        <h1>My frist html document</h1>
+        <p>This is a page which illustrates the usage of links!</p>
+        <a href="http://www.google.com" target="_blank">Making change of link</a>
+        <form name="form1">
+            <input type="button" value="open wind" name="btn1" id="btn1" onclick="openNewWindow()">
+            <input type="button" value="close wind" name="btn1" id="btn1" onclick="closeNewWindow()">
+            <input type="button" value="close self wind" name="btn1" id="btn1" onclick="selfCloseNewWindow()">
+            <input type="button" value="delayTimeout wind" name="btn1" id="btn1" onclick="delayTimeOutNewWindow()">
+            <input type="button" value="open wndows with document write and close" name="btn1" id="btn1" onclick="openNewWindowDocCode()">
+            <input type="button" value="change url link" name="btn1" id="btn1" onclick="changeLinkurl(0,`https://localhost:80/`)">
+        </form>
+    </body>
+</html>

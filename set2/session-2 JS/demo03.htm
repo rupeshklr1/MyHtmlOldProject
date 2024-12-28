@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            Html documents_page-1
+        </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script language="JavaScript">
+            // <!--
+                function vehicle(hasEgn,hasWhe) {
+                    this.hasEgn = hasEgn || false;
+                    this.hasWhe = hasWhe || false;
+                }
+                function car(make,modal,hp) {
+                    this.make = make;
+                    this.modal = modal;
+                    this.hp = hp;
+                }
+                function dispSpecs(){
+                    return (this.hasEgn+ " " +this.hasWhe+ " " +this.make+ " " +this.modal+ " " +this.hp)
+                }
+                function initDate(){
+                    //prototype Inheritance
+                    car.prototype = new vehicle(true,true);
+                    car.prototype.showSpec = dispSpecs;
+                    var car1 = new car("Rolls Royce","Ghost",730);
+                    console.log(car1.showSpec());
+                    vehicle.prototype.hasTrunk = true;
+                    console.log(car1.hasTrunk);
+                }
+                initDate();
+                
+                // -->
+
+        </script>
+    </head>
+    <body>
+        <h1>My frist html document</h1>
+        <p>This is a page which illustrates the usage of links!</p>
+        <form name="form1">
+            <input type="button" value="Greet User Array" name="btn1" id="btn1" onclick="arrayDemo()">
+            
+        </form>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+
+
+body{
+    
+    padding: 10px;
+    top: 10px;
+    max-width: 450px;
+    margin: auto;
+    position: fixed;
+}
+h2{
+    color: #ffffff;;
+}
+div p{
+    color: orange;
+    font-weight: 300;
+}

@@ -1,0 +1,4 @@
+2023-07-04 19:06:42 INFO  debugLogger:25 - at step-1 Scanner object is created 
+2023-07-04 19:06:46 INFO  debugLogger:37 - at step-2 picking user choose for 1
+2023-07-04 19:06:58 INFO  debugLogger:67 - at step-2 2the output of numbers 23 45 is 68
+2023-07-04 19:06:58 INFO  debugLogger:37 - at step-2 picking user choose for 3

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title><Dl></Dl>ay For holiday        </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <style>
+            option{
+                padding: 20;
+            }
+        </style>
+        <script language="JavaScript">
+            // <!--
+                function daysTills(date) {
+                    var toDt = new Date();
+                    var selDt = new Date(date);
+                    var timeDiff = selDt.getTime() - toDt.getTime();
+                    var diffDays = Math.round(timeDiff/ (1000 * 3600 * 24))+1 ;
+                    return diffDays;
+                }
+                function daysLeft() {
+                    var date = document.getElementById("hoil_Day").value;
+                    document.getElementById("leftDays").innerHTML = 'Days lefs :'+daysTills(date);
+                }
+            // -->
+        </script>
+    </head>
+    <body>
+        <h1>My frist html document</h1>
+        <p>This is a page which illustrates the usage of links!</p>
+        <h1 id="leftDays"></h1>
+        <form name="form1">
+            <select name="hoil_Day" id="hoil_Day">
+                <option value="1/1/2024">New Year's Day -1/1/2024</option>
+                <option value="1/14/2024">Makar Sankranti -1/14/2024</option>
+                <option value="1/26/2024">Republic Day -1/26/2024</option>
+                <option value="3/29/2024">Good Friday -3/29/2024</option>
+                <option value="8/15/2024">Independence Day -8/15/2024</option>
+            </select>
+            <input type="button" value="Greet User RegExp" name="btn1" id="btn1" onclick="daysLeft()">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>
+            number to word
+        </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script language="JavaScript">
+            // <!--
+                
+                function numToWord(num){
+                    var units = ["zero","one","two","three","four","five","six","seven","eight","nine"];
+                    function word99(num){
+                        var two_digit=['Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'];
+                        var tens =["","Ten","Tweenty","Thirty","Fourty","Fifty","Sixty","Seventy","Eighty","ninety"];
+                        var units = ["zero","one","two","three","four","five","six","seven","eight","nine"];
+                        var res = '';
+                        if(Math.floor(num/10)>1){
+                            res +=tens[Math.floor(num/10)]
+                        }
+                        // var unitDig = 
+                        if (num>9 && num<20){
+                            res +=" " +two_digit[Math.floor(num%10)]
+                        }else if(Math.floor(num%10)>0){
+                            res +=" " +units[Math.floor(num%10)]
+                        }
+                        return res;
+                    }
+                    if(num>99999 || num<=0){
+                        console.log(num,"given number not in range of 1-99,999.");
+                        return "given number b/n 1-99,999.";
+                    }
+                    var th = 'thousand',hr = 'hundred', res ='',val = 0;
+                    val = Math.floor(num/1000);
+                    if(val >0){
+                        res += word99(val)+ " "+th
+                    }
+                    if(Math.floor(num/100)%10){
+                        res += " "+units[Math.floor(num/100)%10]+ " "+hr
+                    }
+                    res += " "+word99(Math.floor(num%100))
+                    console.log(num+" >> "+res);
+                }
+                numToWord(99081)
+                numToWord(990)
+                numToWord(9901)
+                numToWord(9999)
+                numToWord(45678)
+                for(let i=0;i<25;i++){
+                    numToWord(i)
+                }
+                // -->
+
+        </script>
+    </head>
+    <body>
+        <h1>My frist html document</h1>
+        <p>This is a page which illustrates the usage of links!</p>
+        <form name="form1">
+            <input type="button" value="Greet User Array" name="btn1" id="btn1" onclick="arrayDemo()">
+            
+        </form>
+    </body>
+</html>

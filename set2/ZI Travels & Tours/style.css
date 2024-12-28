@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+}
+body{
+    margin: 0 100;
+}
+.mainHeader{
+    align-items: center;
+    text-align: left;    
+    padding: auto;
+    justify-content: space-between!important;
+    display: flex;    
+}
+.mainHeader p{
+    padding-left: 10px;
+}
+.div2{
+    width: 40%;
+}
+.div3{
+    justify-content: space-between;
+    height: 450px;
+    width: 28%;
+    float: left;
+}
+.div3 img{
+    height: 200;
+    width: 200;
+}
+.div3 img.sm{
+    height: 200;
+    width: 100;
+}
+.items h2{
+    text-align: center;
+}
+.items .mainHeader img{
+    height: 200px;
+    width: 200px;
+}
+.items .mainHeader p{
+    padding: 30;
+    /* text-align: right; */
+}
+hr{
+    margin: 50 0;
+}
+#footer{
+    color: '#000000';
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration :underline;
+}

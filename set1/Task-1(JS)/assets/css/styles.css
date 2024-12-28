@@ -1,0 +1,13 @@
+#moredata{
+    display: none;
+}
+#ref{
+    display: none;
+}
+.selector{
+    width: 80px;
+    font-size:-webkit-xxx-large;
+}
+button.my-2.btn.btn-dark.fw-bold.rounded-0.mx-auto.col-3.p-0 {
+    height: 35px;
+}

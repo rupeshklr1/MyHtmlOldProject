@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            array to sorting by condition.
+        </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script language="JavaScript">
+            // <!--
+                
+                function sortArr(arr,order){
+                    if(Array.isArray(arr) && arr.length >0){
+                        arr = arr.sort(function(a, b) {
+                            return a - b;
+                        });
+                        if(order){
+                            return arr;
+                        }else{
+                            return arr.reverse();
+                        }
+                    }
+                    return []
+                }
+                var arr1 = [67,8,9,23,902,3]
+                var arr2 = [6,84,19,203,9,10,2,3]
+                console.log(sortArr(arr1,true).toString());
+                console.log(sortArr(arr1,false).toString());
+                console.log(sortArr(arr2,true).toString());
+                console.log(sortArr(arr2,false).toString());             
+                
+                // -->
+
+        </script>
+    </head>
+    <body>
+        <h1>My frist html document</h1>
+        <p>This is a page which illustrates the usage of links!</p>
+        <form name="form1">
+            <input type="button" value="Greet User Array" name="btn1" id="btn1" onclick="arrayDemo()">
+            
+        </form>
+    </body>
+</html>

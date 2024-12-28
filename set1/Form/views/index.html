@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+	<title>Document</title>
+</head>
+
+<body style="border: 5px solid black; margin: 25px; padding: 20px">
+	<h1 class="m-5 text-bg-dark text-center" style="margin: 10px">
+		New issue
+	</h1>
+	<div class="container-fluid">
+		<div class="input-group m-3 boxsize">
+			<label class="input-group-text" for="inputGroupSelect01">Project
+			</label>
+			<select class="form-select" id="inputGroupSelect01">
+				<option value="devops">Dev oops</option>
+				<option value="sys">sys - admin</option>
+			</select>
+		</div>
+		<div class="input-group m-3 boxsize">
+			<label class="input-group-text" for="inputGroupSelect01">Tracker
+			</label>
+			<select class="form-select" id="inputGroupSelect01">
+				<option value="Changes">Changes</option>
+				<option value="Incident">Incident(H/W realeted)</option>
+				<option value="Serviecs">Serviecs requests</option>
+			</select>
+		</div>
+		<div class="form-floating m-3">
+			<input type="text" minlength="1" maxlength="100" class="form-control" id="floatingPassword"
+				placeholder="text" />
+			<label for="floatingPassword">Subject</label>
+		</div>
+
+		<div class="form-floating m-3">
+			<input type="text" minlength="1" maxlength="150" class="form-control" id="floatingPassword"
+				placeholder="text" />
+			<label for="floatingPassword">Description</label>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-xl-4">
+				<div class="input-group m-3 boxsize">
+					<label class="input-group-text" for="inputGroupSelect01">Status
+					</label>
+					<select class="form-select" id="inputGroupSelect01">
+						<option value="1">New</option>
+						<option value="2">Pending</option>
+						<option value="2">Closed</option>
+					</select>
+				</div>
+
+				<div class="input-group m-3 boxsize">
+					<label class="input-group-text" for="inputGroupSelect01">Priority
+					</label>
+					<select class="form-select" id="inputGroupSelect01">
+						<option value="low">Low</option>
+						<option value="medium">Medium</option>
+						<option value="high">High</option>
+					</select>
+				</div>
+
+				<div class="input-group m-3 boxsize">
+					<label class="input-group-text" for="inputGroupSelect01">Assignee
+					</label>
+					<select class="form-select" id="inputGroupSelect01">
+						<option value="member1">Member-1</option>
+						<option value="mem2">Member-2</option>
+						<option value="mem3">Member-3</option>
+						<option value="me">(( me ))</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-6 col-xl-4">
+				<div id="Startdate" class="input-group date row m-3" data-date-format="dd-mm-yyyy">
+					<label class="col-3">Start Date: </label>
+					<input class="form-control" type="text" readonly />
+					<span class="input-group-addon">
+						<i class="glyphicon glyphicon-calendar"></i>
+					</span>
+				</div>
+
+				<div id="enddate" class="input-group date row m-3" data-date-format="dd-mm-yyyy">
+					<label class="col-3">End Date: </label>
+					<input class="form-control" type="text" readonly />
+					<span class="input-group-addon">
+						<i class="glyphicon glyphicon-calendar"></i>
+					</span>
+				</div>
+
+				<div class="m-3">
+					<label> Time </label>
+					<input type="number" min="3" max="100" class="ms-sm-3" />
+					<label> In hours</label>
+				</div>
+
+				<div class="input-group m-3 doneper">
+					<label class="input-group-text" for="inputGroupSelect01">% Done
+					</label>
+					<select class="form-select" id="inputGroupSelect01">
+						<option value="0">0%</option>
+						<option value="10">10%</option>
+						<option value="20">20%</option>
+						<option value="30">30%</option>
+						<option value="40">40%</option>
+						<option value="50">50%</option>
+						<option value="60">60%</option>
+						<option value="70">70%</option>
+						<option value="80">80%</option>
+						<option value="90">90%</option>
+						<option value="100">100%</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<button class="btn btn-primary" type="submit">
+				Submit form
+			</button>
+		</div>
+	</div>
+	<script src="../js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Html documents_page-1
+        </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script language="JavaScript">
+            // <!--
+                function initDate(){
+                    var dt = new Date();
+                    Date.prototype.getDayName = function(){
+                        var weekList = new Array("SUN","MON", "TUE", "WED","THUR","FRI","SAT");
+                        return weekList[this.getDay()]
+                    }
+                    console.log(dt.getDayName());
+                }
+                initDate();
+                var member1,member2;
+                function myClass(){
+                    this.propertyTwo = 2;
+                    this.propertyThree = 3;
+                }
+                var myInstance = new myClass();
+                console.log(myInstance.propertyOne);
+                myClass.prototype.propertyOne = 1;
+                myClass.prototype.propertyTwo = 1;
+                console.log(myInstance.propertyOne);
+                console.log(myInstance.propertyTwo);
+                var dt2 = new Date();
+                console.log(dt2.getDayName());
+                // -->
+
+        </script>
+    </head>
+    <body>
+        <h1>My frist html document</h1>
+        <p>This is a page which illustrates the usage of links!</p>
+        <form name="form1">
+            <input type="button" value="Greet User Array" name="btn1" id="btn1" onclick="arrayDemo()">
+            <!-- <input type="button" value="Greet User Date" name="btn1" id="btn1" onclick="dateDemo()">
+            <input type="button" value="Greet User Math" name="btn1" id="btn1" onclick="mathDemo()">
+            <input type="button" value="Greet User String" name="btn1" id="btn1" onclick="stringDemo()">
+            <input type="button" value="Greet User Date1" name="btn1" id="btn1" onclick="objectDemo1()">
+            <input type="button" value="Greet User Date2" name="btn1" id="btn1" onclick="objectDemo2()">
+            <input type="button" value="Greet User RegExp" name="btn1" id="btn1" onclick="regDemo()"> -->
+        </form>
+    </body>
+</html>

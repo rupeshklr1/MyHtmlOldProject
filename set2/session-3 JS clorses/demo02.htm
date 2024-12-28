@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>
+            Js coluser
+        </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script language="JavaScript">
+            // <!--
+                function validateForm1(){
+                    console.log(document);
+                    console.log(document.forms);
+                    console.log(document.forms[0]);
+                    for(let i=0; document.forms[0].elements.length;i++){
+                        if(document.forms[0].elements[i].value === ""){
+                            console.log("filled");
+                            document.forms[0].elements[i].focus();
+                            return false;
+                        }
+                    }
+                }
+                function addPara(){
+                    var newPara = document.createElement("p");
+                    var newText = document.createTextNode("Hello world!...");
+                    newPara.appendChild(newText);
+                    var bodyRef = document.getElementsByTagName("body");
+                    bodyRef[0].appendChild(newPara);
+                }
+                function deleteNode(){
+                    var paraRef = document.getElementById("para1");
+                    var boldRef = document.getElementById("bold1");
+                    paraRef.removeChild(boldRef);
+                    
+                }
+                function addNode(){
+                    var paraRef = document.getElementById("para1");
+                    paraRef.style.backgroundColor = "#aabbcc";
+
+                    var newPara = document.createElement("p");
+                    var newText = document.createTextNode("Hello world!...inpara");
+                    newPara.setAttribute("align","right");
+                    console.log(newPara.getAttribute("align"));
+                    
+                    newPara.appendChild(newText);                    
+                    paraRef.appendChild(newPara);                    
+                }
+                function modifyNode(){
+                    var paraRef = document.getElementById("para1");
+                    paraRef.innerHTML += "welcome to modify para section";
+                    // paraRef.appendChild(newPara);                    
+                }
+                function checkEmpName(){
+                    var valu1 = document.getElementById("empName").value ;
+                    if(valu1 !== ""){
+                        var delBtn = document.getElementById("btn5");
+                        delBtn.addEventListener("click",deleteNode );
+                        delBtn.addEventListener("click",function(){console.log("delect btn now working dube.");} );
+                    }
+                }
+                // -->
+        </script>
+    </head>
+    <body>
+        <h1>My frist html document</h1>
+        <p>This is a page which illustrates the usage of links!</p>
+        <p id="para1" > Some content in <b id="bold1"> Document Object Model</b> Dom.</p>
+        <form name="form1">            
+            empName :<input type="text" value="" name="empName" id="empName" ><br>
+            empEmail :<input type="text" value="" name="empEmail" id="empEmail" ><br>
+            empComm :<input type="text" value="" name="empComm" id="empComm" ><br>
+            <input type="button" value="Validated form" name="btn1" id="btn1" onclick="validateForm1()">
+            <input type="button" value="add content" name="btn2" id="btn2" onclick="addPara()">
+            <input type="button" value="add node in para1" name="btn3" id="btn3" onclick="addNode()">
+            <input type="button" value="modify node para1" name="btn4" id="btn4" onclick="modifyNode()">
+            <input type="button" value="delete node" name="btn5" id="btn5">
+            <input type="button" value="add deleting option" name="btn4" id="btn4" onclick="checkEmpName()">
+
+        </form>
+    </body>
+</html>

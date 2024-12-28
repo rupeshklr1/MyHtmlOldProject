@@ -1,0 +1,40 @@
+.content {
+	max-width: 610px;
+	margin: auto;
+	border: 5px seagreen solid;
+	padding: 25px 25px 125px 25px;
+	border-radius: 10px;
+}
+.roundbrd {
+	height: 150px;
+	width: 120px;
+	border-radius: 5px;
+	float: right;
+}
+#left {
+	float: left;
+	width: 120px;
+	padding: 10px;
+}
+#left > b {
+	margin: 5%;
+}
+#leftts {
+	margin: 0px 35px 10px 48px;
+	float: left;
+	width: 120px;
+	border: 10px;
+}
+h2 {
+	margin: 5px;
+	text-align: left;
+	margin-left: 20px;
+}
+#right {
+	float: left;
+	width: 259px;
+	padding: 10px;
+}
+#right > b {
+	margin: 2%;
+}

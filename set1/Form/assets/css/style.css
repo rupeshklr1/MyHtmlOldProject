@@ -1,0 +1,21 @@
+boby {
+	border: 4px solid black;
+}
+#floatingPassword1 {
+	width: 200px;
+	height: 15px;
+}
+.input-group > .form-control,
+.input-group > .form-floating,
+.input-group > .form-select {
+	position: relative;
+	flex: 1 1 auto;
+	width: 25%;
+	min-width: 0;
+}
+.input-group.m-3.boxsize {
+	width: 300px;
+}
+.input-group.m-3.doneper {
+	width: 200px;
+}

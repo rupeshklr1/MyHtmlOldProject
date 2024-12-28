@@ -1,0 +1,42 @@
+.card {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 510px;
+	border: 3px solid red;
+}
+.topelement {
+	display: block;
+	background-color: rgba(25, 186, 192, 0.466);
+	background-image: url(../img/topbackground.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: 75px 10px;
+	height: 130px;
+}
+.profileimg {
+	width: 150px;
+	border-radius: 100%;
+	margin-left: 75px;
+	margin-top: 50px;
+}
+t {
+	padding-left: 20px;
+}
+.icon {
+	height: 30px;
+	padding: 0px 10px;
+}
+.log {
+	margin-left: 20px;
+	height: 15px;
+	float: left;
+	padding: 5px;
+}
+.name {
+	text-align: center;
+}
+.bottom {
+	margin-left: auto;
+	margin-right: auto;
+}

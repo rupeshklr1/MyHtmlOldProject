@@ -1,0 +1,21 @@
+.btn-danger {
+    width: 100px;
+}
+
+.warn {
+    color: #f00;
+}
+
+.warn b {
+    font-size: larger;
+    font-weight: 900;
+}
+
+input[type="radio"]:focus {
+    outline: max(2px, 0.15em) dashed #00f;
+    outline-offset: max(2px, 0.15em);
+}
+.sizefixed{
+    width: 40px;
+    max-width: 40px;
+}

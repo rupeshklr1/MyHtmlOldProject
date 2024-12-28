@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Shapes and triangle rectangle circle.</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script language="JavaScript">
+            // <!--
+                function Shapes(shapType) {
+                    this.type = shapType;
+                }
+                function shapeGetType(){
+                    return this.type;
+                }
+                // function Triangle(si1,si2,si3) {
+                //     this.si1 =si1;
+                //     this.si2 =si2;
+                //     this.si3 =si3;
+                // }
+                // function shapeGetType(){
+                //     return this.type;
+                // }
+                // function trianglePerimeter(){
+                //     return this.si1+this.si2+this.si3;
+                // }
+                Triangle.prototype = new Shapes("triangle");
+                
+                Triangle.prototype.getType = shapeGetType;
+                Triangle.prototype.getPerimeter = trianglePerimeter;
+                // function Circle(r) {
+                //     this.radius =r;
+                // }
+                // function cricleArea(){
+                //     return Math.PI*this.radius*this.radius;
+                // }
+                // function criclePerimeter(){
+                //     return Math.PI*2*this.radius;
+                // }
+                // Circle.prototype = new Shapes("Circle")
+                // Circle.prototype.getArea = cricleArea;
+                // Circle.prototype.getCricumference = criclePerimeter;
+                // function Reactangle(l,w) {
+                //     this.len = l ;
+                //     this.wid = w?w:l ;
+                // }
+                // function reactangleArea(){
+                //     return this.len*this.wid;
+                // }
+                // function reactanglePerimeter(){
+                //     return 2*(this.len+this.wid);
+                // }
+                // Reactangle.prototype = new Shapes("Reactangle")
+                // Reactangle.prototype.getArea = reactangleArea;
+                // Reactangle.prototype.getPerimeter = reactanglePerimeter;
+                
+                function Triangle(si1,si2,si3) {
+                    this.si1 =si1;
+                    this.si2 =si2;
+                    this.si3 =si3;
+                    this.getType = function (){
+                        return this.type;
+                    }
+                    this.getPerimeter = function (){
+                        return this.si1+this.si2+this.si3;
+                    }
+                }
+                Triangle.prototype = new Shapes("triangle");
+                function Reactangle(l,w) {
+                    this.len = l ;
+                    this.wid = w?w:l ;
+                    
+                    if(this.len === this.wid){
+                        this.type = 'sq'
+                    }
+                    this.getArea = function (){
+                        return this.len*this.wid;
+                    }
+                    this.getPerimeter = function (){
+                        return 2*(this.len+this.wid);
+                    }
+                    this.getType = function (){
+                        if(this.type){
+                            if(this.len === this.wid ){
+                                this.type = 'square';
+                            }
+                            return this.type;
+                        }else{
+                            return ''
+                        }
+                }
+                }
+                var itemT3 = new Reactangle(2,3);
+                console.log(itemT3.getType());
+                var itemT4 = new Reactangle(7);
+                console.log(itemT4.getType());
+                Reactangle.prototype = new Shapes("Reactangle")                
+                function init(){
+                    var itemT1 = new  Triangle(1,2,3);
+                    console.log(itemT1.getPerimeter());
+                    console.log(itemT1.getType());
+                    var itemT3 = new Reactangle(2,3);
+                    console.log(itemT3.getType());
+                    var itemT4 = new Reactangle(7);
+                    console.log(itemT4.getType());
+                }
+                init()
+            // -->
+        </script>
+    </head>
+    <body>
+        <h1>My frist html document</h1>
+        <p>This is a page which illustrates the usage of links!</p>
+        <!-- <form name="form1">
+            <input type="button" value="Greet User RegExp" name="btn1" id="btn1" onclick="regDemo()">
+        </form> -->
+    </body>
+</html>

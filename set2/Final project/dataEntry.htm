@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Acme grocers</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="assest/styles.css" type="text/css">        
+        <script src="DBStore.js"></script>
+        <script src="dataEntry.js"></script>
+        <script language="JavaScript">
+            // <!--                
+            // -->
+        </script>
+    </head>
+    <body onload="init();">
+        <h1 class=" page-heading">ACME GROCERS</h1>
+        <marquee width="90%" scrollamount="10" behavior="scroll"><h3 id="welcomeNote">Welcome to Acme grocers...</h3></marquee>
+        
+        <div id="floatEle"> <p id="userField">..</p>
+            <button type="button" class="floatBtn btn" onclick="logoutFun()"> Log out </button>        
+        </div>  
+        
+        <div class="tableFieds">
+            <div class="topsec und" id="topSec1"></div>
+            <div id="bodySec"><center>No Product Add till now.</center></div>
+            <div id="toatalval1" class="d-flex flex-row-reverse " style="display: none !important;" >
+                <div class="col-1 m-3" id="TAID">0</div>
+                <div class="col-1 text-left m-3" id="txtAmtID" >0</div>
+                <div class="col-1 text-left m-3"  >Total </div>
+            </div>
+            <h6 id="toatalval"></h6>
+            <div id="productDeatils">
+                <form class="form2">
+                    <div class="item">
+                        <label for="empName">Product Id :</label>
+                        <input type="text" value="" name="prodId" id="prodId" >
+                    </div>
+                    <div class="item">
+                        <label for="empPass">No.of units :</label>
+                        <input type="number" value="" name="quCount" id="quCount" >
+                    </div>
+                    <div class="item">
+                        <input class="btn ownBtn" type="button" value="Add" name="addBtn" id="addBtn" onclick="addCartItem()">
+                    </div>
+                    <div><input class="btn ownBtn" type="button" value="Reset" name="clearItem" id="clearItem" onclick="clearcart()"> <input class="btn ownBtn" type="button" value="Bill Cart" name="billBtn" id="billBtn" onclick="billCart()"></div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

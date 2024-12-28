@@ -1,0 +1,127 @@
+
+@media (max-width: 1041px){
+    .youngwomen{
+        display: none;
+    }
+    .girl-26{
+        margin: 30px 0px;
+        align-items: center;
+    }
+    .middel{
+        display: none;
+    }
+    .front1{
+        position: relative;
+        left: 300px;
+        top:-150px;
+    }
+    .part7text{
+        margin-right: 30px;
+    }
+}
+@media (min-width: 1034px){
+    .body1{
+        background-color: #000000;
+        padding-bottom: 200px;
+    }
+    .part2{
+        position: relative;
+        top:-100px;
+    }
+    .part4size{
+        position: relative;
+        height: 400px;
+        background-color: #ff0000;
+        margin-bottom: 150px;
+    }
+    .minimg1{
+        position: relative;
+        left: -150px;
+        top :50px;
+        border: 10px #ffffff solid;
+    }
+    .back{
+        top:100px;
+        position: relative;
+    }
+    .middel{
+        position: relative;
+        top: -200px;
+        left: 200px;
+    }
+    .part7text{
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .front1{
+        position: relative;
+        right: -300px;
+        top:-150px;
+        border: 10px #ff0000 solid;
+    }
+    .lifegurde{
+        position: relative;
+        top: -230px;
+        left: 350px;
+        border: 10px #ffffff solid;
+    }
+    .minimg2{
+        position: relative;
+        left:150px;
+        top:-420px;
+        border: 10px #ffffff solid;
+    }
+    
+    
+    .girl-26{
+        border: 10px solid #ff0000;
+        position: relative;
+        left:200px;
+        top:-50px;
+    }
+    .youngwomen{
+        display: block;
+        margin: 12px;
+        position: relative;
+        
+    }
+    .pagefooter{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .foot.d-flex  span{
+        color: #ffffff;
+        padding: 2px;
+        
+    }
+    .family-img{
+        position: relative;
+        scale: 1.5;
+    }
+    .foot.row div{
+        color: #ffffff;
+    }
+    .foot.d-flex  p{
+        color: #ffaa2a;
+    }
+    .part-8round{
+        border: solid 25px #ff0000;
+        height: 125px;
+        width: 125px;
+        border-radius: 100%;
+        position: relative;
+        top:-290px;
+        left: 70px;
+    
+    
+    }
+    .footerlink{
+        text-decoration: underline;
+        color: #2aaaff;
+    }
+    .container-lg{
+        margin-right: 40%;
+        max-width: 730px;
+    }
+}

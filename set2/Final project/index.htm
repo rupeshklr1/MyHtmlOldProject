@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title> Acme grocers</title>
+        <link rel="stylesheet" href="assest/styles.css" type="text/css">
+        
+         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="DBStore.js"></script>
+        <script src="login.js"></script>
+        <script language="JavaScript">
+            // <!--
+            // -->
+        </script>
+    </head>
+    <body class="container pt-5" onload="init()">
+        <h1 class=" page-heading">ACME GROCERS</h1>
+        <marquee width="90%" scrollamount="10" behavior="scroll"><h3 class="">Welcome to Acme grocers...</h3></marquee>
+        <form name="form1" class="form1   form-control p-3 px-5">
+            <div class="row">
+                <div class="item  col-6 text-left">
+                    <label for="empName">USERNAME :</label>
+                    <input type="text" class="form-control" value="" name="empName" id="empName" >
+                </div>
+                <div class="item  col-6 text-left">
+                    <label for="empPass">PASSWORD :</label>
+                    <input type="password" class="form-control" value="" name="empPass" id="empPass" >
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around">
+                <input class="btn ownBtn btn-outline-success text-dark b-0" type="button" value="Login" name="loginBtn" id="loginBtn" onclick="login()">
+                <input class="btn ownBtn  btn-outline-danger  text-dark " type="button" value="Reset" name="clearBtn" id="clearBtn" onclick="clearBTn()">
+            </div>
+        </form>
+    </body>
+</html>

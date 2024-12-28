@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Js coluser
+        </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script language="JavaScript">
+            // <!--
+                var xmlStr = "<?xml version='1.0' ?><movies><movie type='comedy'><title>Raising -1</title><writer>EthanCoean</writer><actor>Nicholes jages</actor></movie><movie type='comedy'><title>Raising -2</title><writer>EthanCoean</writer><actor>Nicholes jages</actor></movie></movies>";
+                function loadData() {
+                    var myPar ,myXmlDoc;
+                    myPar = new DOMParser();
+                    myXmlDoc = myPar.parseFromString(xmlStr,"text/xml");
+                    console.log("Xml loaded");
+                    var moiveObj = myXmlDoc.getElementsByTagName("movie");
+                    console.log( "length",moiveObj.length);
+                    // console.log(moiveObj[0]);
+                    // console.log(moiveObj[0].childNodes);
+                    // console.log(moiveObj[0].childNodes[0]);
+                    // console.log(moiveObj[0].childNodes[0].firstChild);
+                    console.log(moiveObj[0].getAttribute("type"));//proprtey
+                    for(let i=0;i<=moiveObj.length;i++) {
+                        console.log("\n\nindex",i);
+                        console.log(moiveObj[i].childNodes[0].firstChild.nodeValue);
+                        console.log(moiveObj[i].childNodes[1].firstChild.nodeValue);
+                        console.log(moiveObj[i].childNodes[2].firstChild.nodeValue);
+                    };
+                }
+                loadData()
+            // -->
+        </script>
+    </head>
+    <body>
+        <h1>My frist html document</h1>
+        <p>This is a page which illustrates the usage of links!</p>
+        <!-- <form name="form1">
+            <input type="button" value="Greet User RegExp" name="btn1" id="btn1" onclick="regDemo()">
+        </form> -->
+    </body>
+</html>

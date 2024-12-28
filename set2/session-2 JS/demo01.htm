@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>
+            Html documents_page-1
+        </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script language="JavaScript">
+            // <!--
+                var member1,member2;
+                function arrayDemo(){
+                    var tmpArr = new Array();
+                    // var tmpArr = [];
+                    tmpArr[0] = "H";
+                    tmpArr.push("iiiiiiiiiiiii")
+                    tmpArr[1] = "E";
+                    tmpArr[2] = "L";
+                    tmpArr[3] = "L";
+                    tmpArr[4] = "O";
+                    console.log(tmpArr.length);
+                    console.log(Array.isArray(tmpArr));
+                    // alert(tmpArr.length);
+                    // alert(tmpArr.toString());
+
+                    // tmpArr.length = 2;
+                    // alert(tmpArr.toString());
+                    // alert(tmpArr.sort());
+                    // alert(tmpArr.reverse());
+                    // alert(tmpArr.pop());
+                    console.log(tmpArr);
+                }
+                function dateDemo(){
+                    var dt = new Date();
+                    console.log(dt.getDate());
+                    console.log(dt.getDay());
+                    console.log(dt.getFullYear());
+                    console.log(dt.getMonth());
+                    console.log(dt.getHours());
+                    console.log(dt.getMinutes());
+                    console.log(dt.getSeconds());
+                    console.log(dt.toTimeString());
+                    console.log(dt.toGMTString());
+                    console.log(dt.toLocaleDateString());
+
+                    var indDate = new Date();
+                    var weekList = new Array("SUN","MON", "TUE", "WED","THUR","FRI","SAT");
+                    indDate.setFullYear(1947,7,15);
+                    console.log(indDate.getDay());
+                    console.log(weekList[indDate.getDay()]);
+                    // indDate.setFullYear(2023,11,3);
+                    // console.log(indDate.toGMTString(),indDate.getDay());
+                }
+                function mathDemo(){
+                    console.log(Math.PI);
+                    console.log(Math.abs(-100));
+                    console.log(Math.abs(100));
+                    console.log(Math.ceil(32.1));
+                    console.log(Math.round(32.1));
+                    console.log(Math.round(100.9));
+                    console.log(Math.floor(100.9));
+                    console.log(Math.min(100,9,-1));
+                    console.log(Math.max(100,9,-1));
+                    console.log(Math.random());
+                    console.log(Math.round(Math.random()*15));
+                    console.log(Math.sqrt(80));
+                    console.log(Math.pow(2,3));
+                }
+                function stringDemo(){
+                    var myStr = new String("Hello World!");
+                    console.log(myStr.charAt(1));   
+                    console.log("charCodeAt -----" ,myStr.charCodeAt(1));   
+                    console.log(myStr.indexOf("!"));   
+                    console.log(myStr.length);   
+                    console.log(myStr.toUpperCase());   
+                    console.log(myStr.toLowerCase());   
+                    console.log(myStr.substr(1,7));  
+                    var myArr = "Frist,Second,Third,Fourth".split(",");
+                    console.log(myArr.toString());   
+                    for(var i=0;i<myArr.length;i++){
+                        console.log("item at "+i+" - "+myArr[i]);
+                    }
+                }
+                function objectDemo1(){
+                    member1 = new Object();
+                    member1.name = "Person1";
+                    member1.email = "person1@gmail.com";
+                    member1.getDate = function(){
+                        console.log("getDate function getting.");
+                    };
+                    member2 = {};
+                    member2.name = "Person2";
+                    member2.email = "person2@gmail.com";
+                    getObjectData();
+                }
+                function getObjectData(){
+                    console.log(Object.keys(member1).toString(),member1.name);
+                    console.log(Object.keys(member2).toString(),member2.name);
+                    member1.getDate();
+                }
+                function objectDemo2(){
+                    member1 = new employee("Person1","person1@gmail.com");
+                    member2 = new employee("Person2","person2@gmail.com");
+                    getObjectData();
+                }
+                function employee(name,email){
+                    this.name = name;
+                    this.email = email;
+                    this.getData = function(){
+                        console.log("getDate function getting.");
+                    };
+                }
+                function regDemo(){
+                    var st = /oo/;
+                    console.log(st);
+                    console.log(st);
+                    var patten = /cat/ig;
+
+                    var testStr = "cats and Dogs and Cats again!cat";
+                    var regExp = new RegExp(patten);
+                    // var res = regExp.exec("cats and Dogs and cats again!");
+                    // if(res !== null){
+                    //     console.log(res.length,"element in index 0:-",res[0]);
+                    // }else{
+                    //     console.log("Cats not found!");
+                    // }
+                    while( (res = regExp.exec(testStr))!== null ){console.log(res[0],"last index(",regExp.lastIndex,")",res.toString());}
+                    console.log("---------------\n_____________________________________");
+                    console.log(regExp.test(testStr));
+                }
+                // var greetUser = function () {  
+                //     var userName ;
+                //     userName = prompt("Please enter your name:--")
+                //     alert("Hello "+userName1+"!");
+                // };                
+                // (function () {                    
+                //     var userName ;
+                //     userName = prompt("Please enter your IIFFE:")
+                //     alert(""+userName+"!");
+                // })();
+                regDemo();
+            // -->
+        </script>
+    </head>
+    <body>
+        <h1>My frist html document</h1>
+        <p>This is a page which illustrates the usage of links!</p>
+        <form name="form1">
+            <input type="button" value="Greet User Array" name="btn1" id="btn1" onclick="arrayDemo()">
+            <input type="button" value="Greet User Date" name="btn1" id="btn1" onclick="dateDemo()">
+            <input type="button" value="Greet User Math" name="btn1" id="btn1" onclick="mathDemo()">
+            <input type="button" value="Greet User String" name="btn1" id="btn1" onclick="stringDemo()">
+            <input type="button" value="Greet User Date1" name="btn1" id="btn1" onclick="objectDemo1()">
+            <input type="button" value="Greet User Date2" name="btn1" id="btn1" onclick="objectDemo2()">
+            <input type="button" value="Greet User RegExp" name="btn1" id="btn1" onclick="regDemo()">
+        </form>
+    </body>
+</html>
