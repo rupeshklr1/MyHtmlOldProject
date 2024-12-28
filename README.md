@@ -14,4 +14,13 @@
 
 
 # SET2
-- # https://rupeshklr1.github.io/MyHtmlOldProject/set2/Final%20project/index.htm
+- # Billing cart  [click here](https://rupeshklr1.github.io/MyHtmlOldProject/set2/Final%20project/index.htm). 
+- ` This HTML and JavaScript page is designed to handle static user employee details, which are represented in a structured format as follows:  
+- [      {empName:"rupesh",empPass:"123456"},      {empName:"user",empPass:"123456"},      {empName:"ind001",empPass:"123456"}, 
+    {empName:"ad41926",empPass:"123456"},      {empName:"343676",empPass:"123456"},  ]  
+- In addition to this, the product IDs are defined to start from p001 and extend to p030 (inclusive of p030).
+- Users have the ability to log in using these static details, which include both user credentials and product information sourced from [DBStore.js ](https://github.com/rupeshklr1/MyHtmlOldProject/blob/main/set2/Final%20project/DBStore.js). This page serves as a foundational component for a billing system tailored for any store, allowing for a defined list of products and users. Users can add products along with the corresponding number of units they wish to purchase. Once they have made their selections, they can generate a bill by clicking on the bill cart button, and they also have the option to reset the form by clicking the reset button.
+- The functionality of this system is designed to enhance user experience. When a user successfully logs into the page, they will be redirected to the billing page, which is specifically tailored for their transactions. In contrast, if a user attempts to access the login or billing page without being logged in, they will be directed to the index.htm page, ensuring that only authenticated users can access the billing functionalities. This structure not only maintains security but also streamlines the process for users engaging with the billing system. [click here](https://rupeshklr1.github.io/MyHtmlOldProject/set2/Final%20project/index.htm). 
+
+
+- `other sample link ` [click here](https://rupeshklr1.github.io/MyHtmlOldProject/set2/ZI%20Travels%20%26%20Tours/home.htm). [click here](https://rupeshklr1.github.io/MyHtmlOldProject/set2/ZI%20Travels%20%26%20Tours/redirectpage.htm). [click here](https://rupeshklr1.github.io/MyHtmlOldProject/set2/session-3%20JS%20clorses/demo01.htm).  [click here](https://rupeshklr1.github.io/MyHtmlOldProject/set2/session-3%20JS%20clorses/demo02.htm). [click here](https://rupeshklr1.github.io/MyHtmlOldProject/set2/winter-wear/index.htm). 
